@@ -1,0 +1,6 @@
+@article{conv-mpn,
+Title = {Conv-MPN: Convolutional Message Passing Neural Network for Structured Outdoor Architecture Reconstruction},
+Author = {Fuyang, Zhang and Nelson, Nauata and Yasutaka, Furukawa},
+Year = {2019},
+journal = {arXiv preprint arXiv:1912.01756}
+}
