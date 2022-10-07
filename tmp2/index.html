@@ -9,6 +9,7 @@
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
     <!-- <model-viewer> HTML element -->
     <div style="height: 300px; width: 23%; margin: 0px; float: left;">
+    <center>Ground-truth</center>
     <model-viewer src="./glb/0label.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
@@ -22,6 +23,7 @@
     </model-viewer>  
     </div>
     <div style="height: 300px; width: 23%; margin: 0px; float: left;">
+    <center>Prediction</center>
     <model-viewer src="./glb/0pred.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
@@ -35,6 +37,7 @@
     </model-viewer>  
     </div>
     <div style="height: 300px; width: 23%; margin: 0px; float: left;">
+    <center>GT - Pred</center>
     <model-viewer src="./glb/0diff1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
@@ -48,6 +51,7 @@
     </model-viewer>  
     </div>
     <div style="height: 300px; width: 23%; margin: 0px; float: left;">
+    <center>Pred - GT</center>
     <model-viewer src="./glb/0diff2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
