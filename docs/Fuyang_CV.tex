@@ -1,0 +1,102 @@
+% Build: xelatex Fuyang_CV.tex
+\documentclass[10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{Songti SC}[BoldFont=Songti SC Bold]
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist{nosep,leftmargin=1.25em}
+
+\newcommand{\cvsec}[1]{%
+  \vspace{1.05em}%
+  {\large\bfseries #1\par}%
+  \vspace{1pt}{\color{black!40}\rule{\textwidth}{0.45pt}}%
+  \vspace{0.12em}%
+}
+\newcommand{\cvline}[2]{\textbf{#1}\hfill\textit{#2}\\}
+\begin{document}
+
+\begin{center}
+{\LARGE\textbf{Fuyang Zhang}} \quad {\large(张夫洋)}\\[0.4em]
+{\small
+\href{mailto:fuyang.zhang97@gmail.com}{fuyang.zhang97@gmail.com}
+\quad|\quad
+\href{mailto:fuyangz@sfu.ca}{fuyangz@sfu.ca}
+\quad|\quad
+\url{https://zhangfuyang.github.io/}
+}
+\end{center}
+\vspace{0.35em}
+
+\cvsec{Education}
+\cvline{Ph.D.\ in Computing Science}{Sep.\ 2021 -- Present}
+Simon Fraser University, Burnaby, Canada\\
+Advisor: Prof.\ Yasutaka Furukawa (GrUVi Lab)
+\vspace{0.55em}
+
+\cvline{M.Sc.\ in Computing Science}{Jan.\ 2020 -- Jul.\ 2021}
+Simon Fraser University, Burnaby, Canada\\
+Advisor: Prof.\ Yasutaka Furukawa
+\vspace{0.55em}
+
+\cvline{B.Eng.\ in Computer Science}{Sep.\ 2015 -- Jul.\ 2019}
+Beihang University (Shenyuan Honors College), Beijing, China\\
+
+\cvsec{Experience}
+\cvline{Research Scientist Intern}{Sep.\ 2022 -- Dec.\ 2022 (4 months)}
+Meta, Reality Labs Research\\
+{\small
+\textbf{Summary:} Joined the group's research on structured-language models for indoor 3D scenes. Co-author on SceneScript, \textit{ECCV} 2024.
+}
+
+\cvsec{Publications}
+{\small
+\begin{enumerate}[leftmargin=1.35em,itemsep=0.35em]
+  \item Fuyang Zhang, Pradeep Kumar Jayaraman, Xiang Xu, Yasutaka Furukawa.
+    ``B-Rep Distance Functions (BR-DF): How to Represent a B-Rep Model by Volumetric Distance Functions?''
+    arXiv, 2025.
+
+  \item Zhengqing Wang, Yuefan Wu, Jiacheng Chen, Fuyang Zhang, Yasutaka Furukawa.
+    ``CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive Neural Rendering.''
+    \textit{NeurIPS}, 2025 (spotlight).
+
+  \item Shitao Tang, Jiacheng Chen, Dilin Wang, Chengzhou Tang, Fuyang Zhang, Yuchen Fan, Vikas Chandra, Yasutaka Furukawa, Rakesh Ranjan.
+    ``MVDiffusion++: A Dense High-resolution Multi-view Diffusion Model for Single or Sparse-view 3D Object Reconstruction.''
+    \textit{ECCV}, 2024.
+
+  \item Armen Avetisyan, Christopher Xie, Henry Howard-Jenkins, Tsun-Yi Yang, Samir Aroudj, Suvam Patra, Fuyang Zhang, Duncan Frost, Luke Holland, Campbell Orme, Jakob Engel, Edward Miller, Richard Newcombe, Vasileios Balntas.
+    ``SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model.''
+    \textit{ECCV}, 2024.
+
+  \item Fuyang Zhang*, Shitao Tang*, Jiacheng Chen, Peng Wang, Yasutaka Furukawa.
+    ``MVDiffusion: Enabling Holistic Multi-view Image Generation with Correspondence-Aware Diffusion.''
+    \textit{NeurIPS}, 2023 (spotlight).
+
+  \item Fuyang Zhang, Xiang Xu, Nelson Nauata, Yasutaka Furukawa.
+    ``Structured Outdoor Architecture Reconstruction by Exploration and Classification.''
+    \textit{ICCV}, 2021.
+
+  \item Fuyang Zhang*, Nelson Nauata*, Yasutaka Furukawa.
+    ``Conv-MPN: Convolutional Message Passing Neural Network for Structured Outdoor Architecture Reconstruction.''
+    \textit{CVPR}, 2020.
+\end{enumerate}
+}
+
+\cvsec{Honors \& funding}
+\cvline{Graduate Entrance Scholarship}{Sep.\ 2021}
+\cvline{SFU Graduate Fellowship}{Jan.\ 2020; Sep.\ 2021}
+
+\cvsec{Skills}
+\textbf{Languages:} English (professional), Chinese (native).\\
+\textbf{Programming:} Python, PyTorch, TensorFlow, C/C++, Java; familiar with C\#.
+
+\end{document}
