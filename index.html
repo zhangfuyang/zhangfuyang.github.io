@@ -1,282 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fuyang Zhang</title>
-
-    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fuyang Zhang</title>
 
-    <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <style>
-          body {
-            font-family: Roboto, 'sans-serif';
-            font-size: 16px;
-            background-color: #FFFFFF;
-            color: #4F6071;
-          }
-          h1 {
-              font-weight: 300;
-              font-size: 2rem;
-          }
-          #header {
-            background-color: #f4f4f4;
-            /*background-color: #FFFFFF;*/
-            display: flex;
-            align-items: flex-end;
-            padding-top:60px;
-            padding-bottom:60px;
-          }
-          #footer {
-            background-color: #FFFFFF;
-            padding:60px;
-          }
-          #portrait {
-            border: 3px solid white;
-          }
-          #header-text {
-            margin-top: 60px;
-            margin-left: 220px;
-          }
-          #header-text-name {
-            font-size: 40px;
-          }
-          #header-text-email {
-            font-size: 20px;
-            font-style: italic;
-          }
-          .header-text-desc {
-            font-size: 20px;
-          }
-          .vspace-top {
-            margin-top: 30px;
-          }
-          .vspace-top-news {
-              margin-top: 15px;
-          }
-          .paper-image {
-            width: 150px;
-          }
-          .news-date {
-              font-weight: bold;
-          }
-          .paper-title {
-            font-weight: bold;
-          }
-          .paper-authors {
-            font-style: italic;
-          }
-    </style>
+    <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id='header'>
-        <div class='container'>
-            <div class='row'>
+    <header class="site-header">
+        <div class="container">
+            <div class="row align-items-end">
                 <div class="col-sm-3 offset-sm-1">
-                    <img src='imgs/portrait.jpg' class='img-fluid' id='portrait'>
+                    <img src="imgs/portrait.jpg" alt="Portrait of Fuyang Zhang" class="img-fluid portrait">
                 </div>
-
                 <div class="col">
-                  <div id='header-text-name'>
-                      Fuyang Zhang
-                  </div>
-                  <div id='header-text-email'>
-                    fuyangz (at) sfu (dot) ca 
-                  </div>
-				  <div id='header-text-email'>
-				    fuyang.zhang97 (at) gmail (dot) ca
-				  </div>
-                  <div>
-                    <a href="https://github.com/zhangfuyang">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=AOrCbiIAAAAJ">[Google Scholar]</a>
-                    <a href="https://www.linkedin.com/in/fuyang-zhang-79145b222/">[LinkedIn]</a>
-                    <a href="docs/Fuyang_CV.pdf">[Download CV]</a>
-                  </div>
-
+                    <h1 class="site-title">Fuyang Zhang</h1>
+                    <p class="header-email">fuyangz (at) sfu (dot) ca</p>
+                    <p class="header-email">fuyang.zhang97 (at) gmail (dot) com</p>
+                    <nav class="site-nav" aria-label="External links">
+                        <a href="https://github.com/zhangfuyang">[GitHub]</a>
+                        <a href="https://scholar.google.com/citations?hl=en&amp;user=AOrCbiIAAAAJ">[Google Scholar]</a>
+                        <a href="https://www.linkedin.com/in/fuyang-zhang-79145b222/">[LinkedIn]</a>
+                        <a href="docs/Fuyang_CV.pdf">[Download CV]</a>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
+    <main class="container">
+        <div class="row section">
+            <div class="col offset-sm-1">
+                <section id="bio" aria-labelledby="bio-heading">
+                    <h2 class="section-title" id="bio-heading">Bio</h2>
+                    <p class="bio-text">
+                        I am a PhD student in Computing Science at <a href="https://www.sfu.ca/">Simon Fraser University</a>,
+                        under the supervision of Prof. <a href="https://www2.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>.
+                        I received my bachelor degree from Beihang University.
+                    </p>
+                </section>
 
-    <div class='container'>
-        <div class='row vspace-top'>
-            <div class='col offset-sm-1'>
-                <h1>Bio</h1>
-                <p>
-					I am a Phd student in the Computing Science at <a href="https://www.sfu.ca/">Simon Fraser University</a>, 
-					under supervision of Prof. <a href="https://www2.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>. 
-					I received my bachelor degree from Beihang University.
-                </p>
-
-                <div class='vspace-top'>
-                    <h1>News</h1>
-                </div>
-
-                <!--- List of news --->
-				<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        September 2021
-                    </div>
-                    <div class="col">
-                        Received SFU Graduate Fellowship & Special Graduate Entrance Scholarship
-                    </div>
-                </div>
-						
-				<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        September 2021
-                    </div>
-                    <div class="col">
-                        Continue studying at SFU as a PhD student
-                    </div>
-                </div>		
-				<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        July 2021
-                    </div>
-                    <div class="col">
-                        One paper got accepted at ICCV 2021
-                    </div>
-                </div>
-
-				
-				
-				<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        January 2021
-                    </div>
-                    <div class="col">
-                        Received Helmut and Hugo Eppich Family Graduate Scholarship
-                    </div>
-                </div>
-				
-				<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        March 2020
-                    </div>
-                    <div class="col">
-                        One paper got accepted at CVPR 2020
-                    </div>
-                </div>
-				
-				<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        January 2020
-                    </div>
-                    <div class="col">
-                        Received SFU Graduate Fellowship
-                    </div>
-                </div>
-
-                <div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        January 2020
-                    </div>
-                    <div class="col">
-                        Joining Simon Fraser University as a master student (thesis based)
-                    </div>
-                </div>
-
-
-
-
-                <div class='vspace-top'>
-                    <h1>Projects</h1>
-                </div>
-
-                <!--- List of publications --->
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='https://raw.githubusercontent.com/mvdiffusion/mvdiffusion.github.io/main/assets/images/teaser_better.png' class='img-fluid' style="width:100%; margin-right:-20px; margin-top:5px;">
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            MVDiffusion: Enabling Holistic Multi-view Image Generation with Correspondence-Aware Diffusion
+                <section id="experience" class="section" aria-labelledby="experience-heading">
+                    <h2 class="section-title" id="experience-heading">Experience</h2>
+                    <dl class="experience-list">
+                        <div class="experience-item">
+                            <dt class="experience-when">2021 – present</dt>
+                            <dd class="experience-detail">
+                                <strong>Ph.D.</strong>, Computing Science,
+                                <a href="https://www.sfu.ca/">Simon Fraser University</a>.
+                                <a href="http://gruvi.cs.sfu.ca/">GrUVi lab</a>,
+                                advised by Prof. <a href="https://www2.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>.
+                            </dd>
                         </div>
-                        <div class='paper-desc'>
-                            in submission
+                        <div class="experience-item">
+                            <dt class="experience-when">Sep – Dec 2022</dt>
+                            <dd class="experience-detail">
+                                <strong>Research scientist intern</strong> (4 months),
+                                <a href="https://www.meta.com/">Meta</a>
+                                (Reality Labs Research).
+                            </dd>
                         </div>
-                        <div class='paper-authors'>
-                            <a href="https://tangshitao.github.io/"> Shitao Tang*</a>, <u>Fuyang Zhang*</u>, <a href="https://jcchen.me/">Jiacheng Chen</a>, <a href="https://pengwangucla.github.io/peng-wang.github.io/">Peng Wang</a>, <a href="https://www.cs.sfu.ca/~furukawa/"> Yasutaka Furukawa</a>
+                        <div class="experience-item">
+                            <dt class="experience-when">2020 – 2021</dt>
+                            <dd class="experience-detail">
+                                <strong>M.Sc.</strong>, Computing Science,
+                                <a href="https://www.sfu.ca/">Simon Fraser University</a> (thesis-based graduate program).
+                            </dd>
                         </div>
-                        <div>
-                            <a href="https://arxiv.org/abs/2307.01097">[Paper]</a>
-							<a href="https://github.com/Tangshitao/MVDiffusion">[Code]</a>
-							<a href="https://mvdiffusion.github.io/">[Project page]</a>
-							<a href="https://huggingface.co/spaces/tangshitao/MVDiffusion">[Demo]</a>
+                        <div class="experience-item">
+                            <dt class="experience-when">2015 – 2019</dt>
+                            <dd class="experience-detail">
+                                <strong>B.Eng.</strong> in Computer Science,
+                                <a href="https://www.buaa.edu.cn/">Beihang University</a>.
+                            </dd>
                         </div>
-                    </div>
-                </div>
+                    </dl>
+                </section>
 
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/exp-cls.png' class='img-fluid' style="width:100%; margin-right:-20px; margin-top:5px;">
-                    </div>
+                <section id="projects" class="section" aria-labelledby="projects-heading">
+                    <h2 class="section-title" id="projects-heading">Projects</h2>
 
-                    <div class="col">
-                        <div class='paper-title'>
-                            Structured Outdoor Architecture Reconstruction by Exploration and Classification
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="https://zhangfuyang.github.io/brdf/assets/images/teaser_v3.jpg" alt="" class="img-fluid project-thumb">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">B-Rep Distance Functions (BR-DF): How to Represent a B-Rep Model by Volumetric Distance Functions?</h3>
+                                <p class="paper-desc mb-1">arXiv 2025</p>
+                                <p class="paper-authors mb-2">
+                                    <u>Fuyang Zhang</u>, <a href="https://www.research.autodesk.com/people/pradeep-kumar-jayaraman/">Pradeep Kumar Jayaraman</a>, <a href="https://samxuxiang.github.io/">Xiang Xu</a>, <a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://arxiv.org/abs/2511.14870">[Paper]</a>
+                                    <a href="https://github.com/zhangfuyang/BR-DF">[Code]</a>
+                                    <a href="https://zhangfuyang.github.io/brdf/">[Project page]</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class='paper-desc'>
-                            ICCV 2021 Poster
-                        </div>
-                        <div class='paper-authors'>
-                            <u>Fuyang Zhang</u>, <a href="https://samxuxiang.github.io/"> Xiang Xu</a>, <a href="http://www.sfu.ca/~nnauata/"> Nelson Nauata</a>, <a href="https://www.cs.sfu.ca/~furukawa/"> Yasutaka Furukawa</a>
-                        </div>
-                        <div>
-                            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Structured_Outdoor_Architecture_Reconstruction_by_Exploration_and_Classification_ICCV_2021_paper.pdf">[Paper]</a>
-							<a href="https://github.com/zhangfuyang/search_evaluate">[Code]</a>
-							<a href="http://zhangfuyang.github.io/expcls">[Project page]</a>
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/Conv-MPN.jpg' class='img-fluid' style="width:100%; margin-right:-20px; margin-top:-15px;">
-                    </div>
+                    </article>
 
-                    <div class="col">
-                        <div class='paper-title'>
-                            Conv-MPN: Convolutional Message Passing Neural Network for Structured Outdoor Architecture Reconstruction
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="https://clift-nvs.github.io/resources/preview.png" alt="" class="img-fluid project-thumb">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive Neural Rendering</h3>
+                                <p class="paper-desc mb-1">NeurIPS 2025 (spotlight)</p>
+                                <p class="paper-authors mb-2">
+                                    <a href="https://eric-zqwang.github.io/">Zhengqing Wang</a>, <a href="https://ivenwu.com/">Yuefan Wu</a>, <a href="https://jcchen.me/">Jiacheng Chen</a>, <u>Fuyang Zhang</u>, <a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://arxiv.org/abs/2507.08776">[Paper]</a>
+                                    <a href="https://github.com/eric-zqwang/CLiFT">[Code]</a>
+                                    <a href="https://clift-nvs.github.io/">[Project page]</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class='paper-desc'>
-                            CVPR 2020 Poster
+                    </article>
+
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="imgs/mvdiffusion-plusplus.png" alt="" class="img-fluid project-thumb">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">MVDiffusion++: A Dense High-resolution Multi-view Diffusion Model for Single or Sparse-view 3D Object Reconstruction</h3>
+                                <p class="paper-desc mb-1">ECCV 2024</p>
+                                <p class="paper-authors mb-2">
+                                    <a href="https://tangshitao.github.io/">Shitao Tang</a>, <a href="https://jcchen.me/">Jiacheng Chen</a>, <a href="https://wdilin.github.io/">Dilin Wang</a>, <a href="https://frobelbest.github.io/">Chengzhou Tang</a>, <u>Fuyang Zhang</u>, <a href="https://ychfan.github.io/">Yuchen Fan</a>, <a href="https://www.linkedin.com/in/vchandra/">Vikas Chandra</a>, <a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>, <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://arxiv.org/abs/2402.12712">[Paper]</a>
+                                    <a href="https://github.com/Tangshitao/MVDiffusion_plusplus">[Code]</a>
+                                    <a href="https://mvdiffusion-plusplus.github.io/">[Project page]</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class='paper-authors'>
-                            <u>Fuyang Zhang*</u>, <a href="http://www.sfu.ca/~nnauata/">Nelson Nauata*</a>, <a href="https://www.cs.sfu.ca/~furukawa/"> Yasutaka Furukawa</a>
+                    </article>
+
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="imgs/scenescript-teaser.png" alt="" class="img-fluid project-thumb">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model</h3>
+                                <p class="paper-desc mb-1">ECCV 2024</p>
+                                <p class="paper-authors mb-2">
+                                    <a href="https://scholar.google.com/citations?user=Ta4TDJoAAAAJ">Armen Avetisyan</a>, <a href="https://chrisdxie.github.io/">Christopher Xie</a>, <a href="https://henryhj.github.io/">Henry Howard-Jenkins</a>, <a href="https://shamangary.github.io/">Tsun-Yi Yang</a>, <a href="https://scholar.google.com/citations?user=RcD8_eAAAAAJ">Samir Aroudj</a>, <a href="https://scholar.google.com/citations?user=b32zA_kAAAAJ">Suvam Patra</a>, <u>Fuyang Zhang</u>, <a href="https://scholar.google.com/citations?user=P9l4zHIAAAAJ">Duncan Frost</a>, <a href="https://www.linkedin.com/in/hollandluke">Luke Holland</a>, <a href="https://www.linkedin.com/in/campbellorme">Campbell Orme</a>, <a href="https://jakobengel.github.io/">Jakob Engel</a>, <a href="https://www.linkedin.com/in/edwardrichardmiller">Edward Miller</a>, <a href="https://www.linkedin.com/in/richard-newcombe-a094164">Richard Newcombe</a>, <a href="https://vbalnt.github.io/">Vasileios Balntas</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://arxiv.org/abs/2403.13064">[Paper]</a>
+                                    <a href="https://github.com/facebookresearch/scenescript">[Code]</a>
+                                    <a href="https://www.projectaria.com/scenescript/">[Project page]</a>
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Conv-MPN_Convolutional_Message_Passing_Neural_Network_for_Structured_Outdoor_Architecture_CVPR_2020_paper.pdf">[Paper]</a>
-							<a href="https://github.com/zhangfuyang/Conv-MPN">[Code]</a>
-							<a href="http://zhangfuyang.github.io/convmpn">[Project page]</a>
+                    </article>
+
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="https://raw.githubusercontent.com/mvdiffusion/mvdiffusion.github.io/main/assets/images/teaser_better.png" alt="" class="img-fluid project-thumb">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">MVDiffusion: Enabling Holistic Multi-view Image Generation with Correspondence-Aware Diffusion</h3>
+                                <p class="paper-desc mb-1">NeurIPS 2023 (spotlight)</p>
+                                <p class="paper-authors mb-2">
+                                    <a href="https://tangshitao.github.io/">Shitao Tang*</a>, <u>Fuyang Zhang*</u>, <a href="https://jcchen.me/">Jiacheng Chen</a>, <a href="https://pengwangucla.github.io/peng-wang.github.io/">Peng Wang</a>, <a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://arxiv.org/abs/2307.01097">[Paper]</a>
+                                    <a href="https://github.com/Tangshitao/MVDiffusion">[Code]</a>
+                                    <a href="https://mvdiffusion.github.io/">[Project page]</a>
+                                    <a href="https://huggingface.co/spaces/tangshitao/MVDiffusion">[Demo]</a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-				<hr>
-                <footer>
-                    <p> Website template from <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>.</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="imgs/exp-cls.png" alt="" class="img-fluid project-thumb">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">Structured Outdoor Architecture Reconstruction by Exploration and Classification</h3>
+                                <p class="paper-desc mb-1">ICCV 2021 Poster</p>
+                                <p class="paper-authors mb-2">
+                                    <u>Fuyang Zhang</u>, <a href="https://samxuxiang.github.io/">Xiang Xu</a>, <a href="https://www.sfu.ca/~nnauata/">Nelson Nauata</a>, <a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Structured_Outdoor_Architecture_Reconstruction_by_Exploration_and_Classification_ICCV_2021_paper.pdf">[Paper]</a>
+                                    <a href="https://github.com/zhangfuyang/search_evaluate">[Code]</a>
+                                    <a href="https://zhangfuyang.github.io/expcls">[Project page]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="imgs/Conv-MPN.jpg" alt="" class="img-fluid project-thumb project-thumb--tight-top">
+                            </div>
+                            <div class="col">
+                                <h3 class="paper-title h5">Conv-MPN: Convolutional Message Passing Neural Network for Structured Outdoor Architecture Reconstruction</h3>
+                                <p class="paper-desc mb-1">CVPR 2020 Poster</p>
+                                <p class="paper-authors mb-2">
+                                    <u>Fuyang Zhang*</u>, <a href="https://www.sfu.ca/~nnauata/">Nelson Nauata*</a>, <a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Conv-MPN_Convolutional_Message_Passing_Neural_Network_for_Structured_Outdoor_Architecture_CVPR_2020_paper.pdf">[Paper]</a>
+                                    <a href="https://github.com/zhangfuyang/Conv-MPN">[Code]</a>
+                                    <a href="https://zhangfuyang.github.io/convmpn">[Project page]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <footer class="site-footer">
+                    <p class="mb-0">Website template from <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>.</p>
                 </footer>
-
             </div>
-
         </div>
+    </main>
 
-    </div>
-
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>

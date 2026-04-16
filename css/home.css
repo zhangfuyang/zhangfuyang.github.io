@@ -1,0 +1,119 @@
+/* --- Base --- */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #4f6071;
+}
+
+/* --- Site header --- */
+.site-header {
+  background-color: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.site-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.header-email {
+  margin: 0.25rem 0 0;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.site-nav {
+  margin-top: 0.75rem;
+}
+
+.site-nav a {
+  margin-right: 0.35rem;
+}
+
+.portrait {
+  border: 3px solid #fff;
+}
+
+/* --- Main content --- */
+.section {
+  margin-top: 30px;
+}
+
+.section-title {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* --- Bio --- */
+.bio-text {
+  margin-bottom: 0;
+}
+
+/* --- Experience --- */
+.experience-list {
+  margin: 0;
+}
+
+.experience-list dt,
+.experience-list dd {
+  margin: 0;
+}
+
+.experience-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 14px;
+}
+
+.experience-item:first-of-type {
+  margin-top: 0;
+}
+
+.experience-when {
+  flex: 0 0 auto;
+  min-width: 9rem;
+  font-weight: bold;
+}
+
+.experience-detail {
+  flex: 1 1 14rem;
+}
+
+/* --- Projects / publications --- */
+.project {
+  margin-top: 30px;
+}
+
+.project:first-of-type {
+  margin-top: 0;
+}
+
+.project-thumb {
+  width: 100%;
+  margin-right: -20px;
+  margin-top: 5px;
+}
+
+.project-thumb--tight-top {
+  margin-top: -15px;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.paper-authors {
+  font-style: italic;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+}
